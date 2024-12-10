@@ -11,6 +11,9 @@
   "description": "",
   "dependencies": {
     "apollo-server": "^3.13.0",
-    "graphql": "^16.9.0"
+    "apollo-server-express": "^3.13.0",
+    "graphql": "^16.9.0",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
   }
 }

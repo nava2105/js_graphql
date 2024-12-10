@@ -10,7 +10,7 @@ This project is a basic GraphQL server built using `Apollo Server` and JavaScrip
 
 - **GraphQL Query**:
     - Query: `hello`
-    - Response: `"Hola Mundo desde GraphQL en javascript"`
+    - Response: `"Hello World from GraphQL in javascript"`
 
 ## Technologies
 ***  
@@ -18,6 +18,7 @@ A list of technologies used within the project:
 * [Node.js](https://nodejs.org): Version 20.0.0
 * [Apollo Server](https://www.apollographql.com/docs/apollo-server/): Version 3.x
 * [GraphQL](https://graphql.org): Specification for API queries
+* [Swagger](https://swagger.io/docs): Version 0.0.2
 
 ## Installation
 ***  
@@ -46,6 +47,10 @@ node app.js
 ```
 Open a browser and enter to
 Server: [http://localhost:4000](http://localhost:4000)
+
+
+Or to review the endpoints in Swagger enter to
+[http://localhost:4000/api-docs](http://localhost:4000/api-docs)
 ### Via Docker-hub
 Pull the image from Docker-hub
 ```
@@ -57,3 +62,7 @@ docker run -p 4000:4000 na4va4/js_graphql
 ```
 Open a browser and enter to
 Server: [http://localhost:4000](http://localhost:4000)
+
+
+Or to review the endpoints in Swagger enter to
+[http://localhost:4000/api-docs](http://localhost:4000/api-docs)

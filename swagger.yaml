@@ -1,0 +1,49 @@
+openapi: 3.0.0
+info:
+  title: GraphQL API
+  description: GraphQL API documentation using Swagger
+  version: 1.0.0
+servers:
+  - url: http://localhost:4000
+    description: Apollo GraphQL server under development
+
+paths:
+  /graphql:
+    post:
+      summary: Execute a GraphQL query
+      description: Allows queries to be sent to the GraphQL API using a single path.
+      requestBody:
+        description: Body of the request including the GraphQL query
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                query:
+                  type: string
+                  example: |
+                    query {
+                      hello
+                    }
+                variables:
+                  type: object
+                  example: {}
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      hello:
+                        type: string
+                        example: "Hello World from GraphQL in javascript"
+        '400':
+          description: Error in GraphQL query
+        '500':
+          description: Internal server error
